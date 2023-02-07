@@ -1,4 +1,4 @@
-export class Entity {
+class Entity {
     constructor() { }
 
     //Obriga as classes filhas a implementar estes metodos
@@ -10,3 +10,5 @@ export class Entity {
         throw new Error("Método toString não implementado");
     }
 }
+
+module.exports = Entity;

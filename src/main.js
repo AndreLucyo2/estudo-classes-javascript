@@ -1,15 +1,18 @@
 //Imports:
-import { Brand } from "./models/Brand.js"
-import * as factoryBrand  from "./factory/Brand.js"
+const factoryBrand  = require("./factory/Brand.js");
+const Brand = require('./models/Brand.js');
 
 
-export class Main {
+
+class Main {
 
   //-----------------------------------------------------------------
   //Inicia a aplicação:
   //-----------------------------------------------------------------
   start_Msg() {
+    console.log('********************************************************')
     console.log("Calsse main!\nIniciando...!");
+    console.log('********************************************************\n')
   }
 
 
@@ -18,14 +21,11 @@ export class Main {
     const brand = new Brand();
     console.log(brand.toJSON());
 
-    var br = factoryBrand.makeAFakeBrand(123456);
+    const br = factoryBrand(15879879);
+
     console.log(br);
 
   }
-
-
-
-
 
 
 
@@ -34,7 +34,11 @@ export class Main {
   //Finalizar a aplicação:
   //-----------------------------------------------------------------
   end_Msg() {
+    console.log('\n********************************************************');
     console.log("Calsse main!\nFinalizou!");
+    console.log('********************************************************');
   }
 
 }
+
+module.exports = Main;

@@ -1,6 +1,7 @@
-import { Entity } from "./Entity.js";
 
-export class Brand extends Entity {
+const Entity = require('./Entity.js');
+
+class Brand extends Entity {
     constructor({ shopcode, uid, nome } = {}) {
         super();
         this.uid = uid || null;
@@ -20,3 +21,5 @@ export class Brand extends Entity {
         return `Brand:\n uid:${this.uid},\n shopcode:${this.shopcode},\n Nome:${this.nome}`;
     }
 }
+
+module.exports = Brand;
