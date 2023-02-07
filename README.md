@@ -10,7 +10,8 @@
 -   node.js:  
 Execute os comandos abaixo na pasta raiz do projeto  
     `node -v`    
-    `npm init`     
+    `npm init`   
+    `npm install express`     
 
 -   faker.js: [link Started](https://fakerjs.dev/guide/)   
 Execute os comandos abaixo na pasta raiz do projeto  
