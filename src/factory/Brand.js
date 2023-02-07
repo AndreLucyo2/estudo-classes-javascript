@@ -1,4 +1,7 @@
-const { faker } = require('@faker-js/faker');
+//import * as  faker  from '@faker-js/faker';
+import { faker } from '.../node_modules/@faker-js/faker/*';
+//const faker = require("@faker-js/faker/locale/pt_BR");
+
 import { Brand } from "../models/Brand.js";
 
 /** Returns a Brand with all props required to make a POST request.*/
@@ -12,3 +15,5 @@ export function makeAFakeBrand(shopcode) {
 
     return brand;
 }
+
+

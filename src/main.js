@@ -1,3 +1,7 @@
+//Imports:
+import { Brand } from "./models/Brand.js"
+import * as factoryBrand  from "./factory/Brand.js"
+
 
 export class Main {
 
@@ -9,11 +13,19 @@ export class Main {
   }
 
 
+  instanciarBrand() {
+
+    const brand = new Brand();
+    console.log(brand.toJSON());
+
+    var br = factoryBrand.makeAFakeBrand(123456);
+    console.log(br);
+
+  }
 
 
 
 
-  
 
 
 
