@@ -12,11 +12,11 @@ Execute os comandos abaixo na pasta raiz do projeto
     `node -v`    
     `npm init`     
 
--   faker.js:[link Started](https://fakerjs.dev/guide/)   
+-   faker.js: [link Started](https://fakerjs.dev/guide/)   
 Execute os comandos abaixo na pasta raiz do projeto  
     `npm install @faker-js/faker --save-dev`    
 
--   dayjs.js:[link Started](https://www.npmjs.com/package/dayjs)   
+-   dayjs.js: [link Started](https://www.npmjs.com/package/dayjs)   
 Execute os comandos abaixo na pasta raiz do projeto  
     `npm install dayjs --save` 
 
